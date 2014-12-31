@@ -24,12 +24,11 @@
  * THE SOFTWARE.
  */
 
-namespace Pimple\Tests;
+namespace Pimple\Tests\Fixtures;
 
-class Invokable
+class NonInvokable
 {
-    public function __invoke()
+    public function __call($a, $b)
     {
-        return 'I was invoked';
     }
 }
